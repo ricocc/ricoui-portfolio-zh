@@ -3,7 +3,8 @@
     "allow": [
       "Bash(find:*)",
       "Bash(pnpm dev:*)",
-      "Bash(pnpm:*)"
+      "Bash(pnpm:*)",
+      "Bash(mkdir -p Tutorials)"
     ],
     "deny": [],
     "ask": []
