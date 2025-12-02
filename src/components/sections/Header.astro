@@ -3,6 +3,7 @@ import { Mail, Moon, SunMedium,Download } from "@lucide/astro";
 import menus from "@/collections/menu.json";
 import Button from "@/components/ui/Button.astro";
 import Logo from "@/components/ui/Logo.astro";
+import { siteConfig } from "@/config/site";
 ---
 
 <!-- This is an invisible div with relative position so that it takes up the height of the menu (because menu is absolute/fixed) -->
@@ -25,7 +26,7 @@ import Logo from "@/components/ui/Logo.astro";
 
     <!-- Navigation -->
     <nav
-      class="relative z-30 flex flex-row-reverse justify-start w-full text-sm sm:justify-end text-neutral-500 dark:text-neutral-400 sm:flex-row sm:items-center"
+      class="relative z-30 flex flex-row-reverse justify-start w-full text-base sm:justify-end text-neutral-500 dark:text-neutral-400 sm:flex-row sm:items-center"
     >
       <!-- Mobile Menu Toggle Buttons -->
       <div class="flex items-center gap-2 sm:hidden">
@@ -81,7 +82,7 @@ import Logo from "@/components/ui/Logo.astro";
       <!-- Menu Items -->
       <div
         id="menu"
-        class="fixed top-[68px] sm:top-0 left-3 right-3 sm:left-0 sm:right-0 ease-out duration-300 z-40 flex-col items-center justify-start hidden w-auto h-auto text-sm pt-6 pb-5 sm:py-0 sm:relative sm:flex-row sm:flex"
+        class="fixed top-[68px] sm:top-0 left-3 right-3 sm:left-0 sm:right-0 ease-out duration-300 z-40 flex-col items-center justify-start hidden w-auto h-auto text-base pt-6 pb-5 sm:py-0 sm:relative sm:flex-row sm:flex"
       >
         <!-- Mobile Menu Background -->
         <div
@@ -111,8 +112,8 @@ import Logo from "@/components/ui/Logo.astro";
 
         <!-- Contact Button (Mobile) -->
         <div class="relative z-10 w-full px-5 mt-3 sm:hidden">
-          <Button url="javascript:void(0);" type="fill" className="m-auto w-full justify-center ">
-            Resume <Download size={16} />
+          <Button url={siteConfig.resume.url} type="fill" className="m-auto w-full justify-center ">
+            {siteConfig.resume.btn} <Download size={16} />
           </Button>
         </div>
       </div>
@@ -120,8 +121,8 @@ import Logo from "@/components/ui/Logo.astro";
       <!-- Desktop Actions -->
       <div class="relative hidden sm:flex items-center gap-2 ml-4 lg:ml-6">
         <!-- Contact Button (Desktop) -->
-        <Button url="javascript:void(0);" type="fill" className="md:flex mx-1">
-          Resume <Download size={16} />
+        <Button url={siteConfig.resume.url} type="fill" className="md:flex mx-1">
+          {siteConfig.resume.btn} <Download size={16} />
         </Button>
 
         <span class="separator-line  hidden sm:inline-block bg-[rgba(183,202,255,0.5)] mt-[20px] -translate-y-1/2 w-px h-[20px]"></span>

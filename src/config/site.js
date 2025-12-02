@@ -2,13 +2,18 @@
 // Note: Please set the correct PUBLIC_SITE_URL in .env file after first deployment
 const SITE_URL = import.meta.env.PUBLIC_SITE_URL || 'https://portfolio.ricoui.com/';
 
+// 导航
 export const siteConfig = {
 	title: "Ricoui Portfolio",
 	author: "Ricoui",
 	url: SITE_URL,
 	mail: "hello@ricoui.com",
 	// resume add your resume file path here: /assets/resume.pdf
-	resume: "https://ricoui.com/",
+	resume:{
+		btn: "简历",
+		url: "https://ricoui.com/",
+		target: "_blank",
+	},
 	utm: {
 		source: `${SITE_URL}`,
 		medium: "referral",
@@ -31,7 +36,7 @@ export const siteConfig = {
 	},
 };
 
-// Footer
+// 底部导航
 export const socialLinks = [
 	{
 		name: 'Twitter',

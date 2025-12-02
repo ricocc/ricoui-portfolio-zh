@@ -10,7 +10,8 @@
 
 /* Define theme font mappings */
 @theme {
-  --font-brand: "Instrument Serif", "Noto Sans SC",ui-sans-serif, system-ui,, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-brand: "Noto Sans SC",ui-sans-serif, system-ui,, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-special: "Instrument Serif",ui-sans-serif, system-ui,, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-sans: "Noto Sans SC", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-body: "Noto Sans SC", ui-sans-serif, system-ui,  sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --max-screen: 1200px;
@@ -84,6 +85,7 @@ html.dark {
   .font-brand{
     font-weight: 500!important;
   }
+
   .prose {
     max-width: 65ch;
   }
