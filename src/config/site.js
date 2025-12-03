@@ -1,6 +1,6 @@
 // Get site URL from environment variable, use default value if not set
 // Note: Please set the correct PUBLIC_SITE_URL in .env file after first deployment
-const SITE_URL = import.meta.env.PUBLIC_SITE_URL || 'https://portfolio.ricoui.com/';
+const SITE_URL = import.meta.env.PUBLIC_SITE_URL || 'https://ricoui-portfolio.pages.dev/';
 
 // 导航
 export const siteConfig = {
@@ -10,8 +10,8 @@ export const siteConfig = {
 	mail: "hello@ricoui.com",
 	// resume add your resume file path here: /assets/resume.pdf
 	resume:{
-		btn: "简历",
-		url: "https://ricoui.com/",
+		btn: "Github",
+		url: "https://github.com/ricocc/ricoui-portfolio-zh",
 		target: "_blank",
 	},
 	utm: {

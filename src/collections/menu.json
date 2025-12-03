@@ -4,11 +4,11 @@
 		"url": "/"
 	},
 	{
-		"name": "博客",
+		"name": "文章",
 		"url": "/blog"
 	},
 	{
-		"name": "作品集",
+		"name": "项目",
 		"url": "/works"
 	},
 	{
